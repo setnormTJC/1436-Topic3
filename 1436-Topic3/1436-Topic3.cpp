@@ -4,9 +4,15 @@
 #include <iostream>
 #include<string> 
 
+
+
+#define print(text) std::cout << text << "\n";
+
 int main()
 {
-    std::cout << "Enter your name:\n";
+    print("Enter your name:\n"); //display8ing output (AKA: "prompt" a user for some data) 
+
+    //std::cout << "Enter your name:\n";
 
     //std::string firstName;
     //std::string lastName;
@@ -16,8 +22,8 @@ int main()
     //std::cout << "You entered: " << firstName << " " << lastName << "\n";
 
     std::string  fullname; 
-
-    std::getline(std::cin, fullname);
+    //herro?
+    std::getline(std::cin, fullname); //get user input 
 
     std::cout << "You entered " << fullname << "\n";
     std::cout << "The LENGTH (number of characters) in that name is: "
