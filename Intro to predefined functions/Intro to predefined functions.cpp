@@ -1,4 +1,4 @@
-/*These "code snippets" are just demoing some "built-in" (or already-defined) functions*/
+/*Th        ese "code snippets" are just demoing some "built-in" (or already-defined) functions*/
 #define _USE_MATH_DEFINES
 
 #include<cmath>
@@ -46,7 +46,6 @@ void demoGettingNumberOfCharactersInAString()
 /*THis function does "number formatting"*/
 void demoSetPrecision()
 {
-
     //std::locale //look into this if interested in the "decimal separator" stuff
 
     //float pi = 3.14181 //that's not very precise 
