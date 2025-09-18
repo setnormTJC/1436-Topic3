@@ -11,7 +11,7 @@ int main()
     const int firstHeight = 69; //inches
 
     const std::string name2 = "Hesam NotApplicable Ghadeqadsdfgsdfgsdfgsdfrijasdfbjkhasdfjkhdsfkj"; //this has a length = 49
-    const int secondAge = 20;
+    const int secondAge = 16;
     const int secondHeight = 63;
 
     //int WIDTH_OF_NAME_COLUMN = 50; //"hard-coded" approach
