@@ -22,21 +22,37 @@ void demoReadingASmallInputFile()
 
 int main()
 {
-	std::string filename = ""; //change me to an "absolute" filepath
+	std::string filename = "C:\\Users\\Work\\Downloads\\popularWords.txt"; 
+	
+	//change me to an "absolute" filepath
 
 	std::ifstream fin(filename);
+	if (fin.is_open() == false)
+	{
 
+		std::cout << "Cannot find input file!\n";
+	}
+	
 	std::string currentLine; 
 	
 	int lineNumber = 0; 
+	int numberOfWordsThatBeginWithA = 0; 
+
 	while (std::getline(fin, currentLine))
 	{
 		std::cout << currentLine << "\n";
-		lineNumber++; 
+		lineNumber++;
 
 		//do some data analytics (ex: what is the longest word in the dictionary?)
+
+		//count the number of words starting with the letter 'a': 
+		if (currentLine.at(0) == 'a')
+		{
+			numberOfWordsThatBeginWithA++; 
+		}
 	}
 
-	std::cout << "TOTAL number of lines: " << lineNumber << "\n";
+	std::cout << "TOTAL number of lines (words): " << lineNumber << "\n";
+	std::cout << "AND the number of words beginning with a is = " << numberOfWordsThatBeginWithA << "\n";
 }
 
