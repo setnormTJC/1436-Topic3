@@ -9,17 +9,18 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Hello World!\n"; //writes text to console (AKA: terminal) 
 
 
-    std::ofstream outputFile("outputFileName.txt"); //relative filepath 
+    std::string filename = "outputFilename.txt";//a "relative" filepath
+
+    std::ofstream outputFile(filename);  //demo std::ios::app(end)
 
     //while (true) //danger, Will Robinson!
     //{
-        outputFile << "a";
-//    }
+    outputFile << "a"; //writes text to the output file named "
+    //}
 
-
-
+    outputFile.close(); 
 
 }
